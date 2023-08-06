@@ -1,5 +1,5 @@
 :root {
-  --dark-purple: rgb(38, 31, 68);
+  --black: rgb(38, 31, 68);
   --dark-grey: #171c1c;
   --light-grey: #a7b9b7;
   --primary: #5cc1bb;
@@ -89,7 +89,7 @@ header .site-logo {
   padding: calc(var(--space) * 0.5) calc(var(--space) * 1);
 }
 
-
+/* Main Content */
 main {
   width: 100%;
   height: 100vh;

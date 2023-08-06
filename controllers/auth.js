@@ -29,4 +29,4 @@ async function logout(req, res) {
   req.session.destroy(() => res.redirect("/"));
 }
 
-module.exports = { login, logout }; 
+module.exports = { login, logout };
