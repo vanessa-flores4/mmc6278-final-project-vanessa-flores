@@ -14,3 +14,16 @@ Planning a trip can be stressful, but with TourSpotter, it can be as easy as a c
 ## Technologies used 
 [OpenTripMap API](https://opentripmap.io/product)
 
+How to Use
+* Clone this repository.
+* Install required dependencies.
+* Run the TourSpotter application.
+* Enter the city you want to explore.
+* Get instant access to the top tourist attractions in that area.
+
+Or 
+
+* Navigate to our [Heroku App](https://mmc6278-final-project-vanessa-99e20d5fb714.herokuapp.com/) to see it in action!
+
+## License
+Used MIT license for course at University of Florida
