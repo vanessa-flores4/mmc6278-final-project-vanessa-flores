@@ -1,7 +1,7 @@
 {
   "name": "mysql_hbs_auth_starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application to help users find great tourist attrations and spots",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -15,8 +15,8 @@
     "mysql:shell": "docker exec -it mysql-sandbox mysql",
     "mysql:check": "until docker exec mysql-sandbox mysql -e \"use $DB_NAME; show tables;\"; do echo ...; sleep 1; done && sleep 3"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["mysql", "handlebars", "authentication"],
+  "author": "Vanessa",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -31,3 +31,4 @@
     "nodemon": "^2.0.16"
   }
 }
+
