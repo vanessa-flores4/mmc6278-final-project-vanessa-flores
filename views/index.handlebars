@@ -1,0 +1,47 @@
+{{> header}}
+<main class="main-container">
+  <div class="main-content">
+    <h1>Welcome to TourSpotter! The Guide to Your Dream Destinations</h1>
+    <p>Explore the world's most amazing tourist tourSpots and discover hidden gems.</p>
+  </div>
+  
+  <div class="search-container">
+    <form id="searchForm" method="GET" onsubmit="handleSearchFormSubmit(event)">
+      <input type="text" name="city" id="city" placeholder="Enter a city">
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="searchResults">
+      {{#if tourSpots}}
+        {{#each tourSpots}}
+          <div class="attraction-card">
+            <h2>{{properties.name}}</h2>
+            <p>{{properties.description}}</p>
+            <p>Rating: {{properties.rate}}</p>
+            {{#if properties.image}}
+              <img src="{{properties.image}}" alt="{{properties.name}}" width="200">
+            {{/if}}
+          </div>
+        {{/each}}
+      {{else}}
+        <p>Where are we going to go?</p>
+      {{/if}}
+    </div>
+
+    {{#if searchQuery}}
+      {{#if tourSpots}}
+      {{else}}
+        <p>No TourSpots found for the given city. </p>
+      {{/if}}
+    {{/if}}
+  </div>
+
+  <div id="list" class="list-group"></div>
+  <button id="next_button" class="btn btn-primary">Search</button>
+</main>
+
+<div id="poi"></div>
+
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/config.js"></script>
+<script src="/js/main.js"></script>
